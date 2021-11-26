@@ -1,0 +1,6 @@
+planetscript
+if (planet.position.y <= -30)
+        {
+            planet.position = new Vector3(Random.Range(-12f,12f),Random.Range(60f,125f),90);
+        }
+        planet.position = planet.position + new Vector3(0, -1 * speed * Time.deltaTime, 0);
